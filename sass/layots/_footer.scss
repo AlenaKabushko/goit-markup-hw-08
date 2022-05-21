@@ -5,20 +5,31 @@
 
     background-color: var(--footer-bgr-color);
 
-    .container {
-        display: flex;
-        align-items: baseline;
+    @media screen and (min-width: 1200px) {
+        .container {
+            display: flex;
+            align-items: baseline;
+        }
     }
 }
 
 .more-contacts {
-    margin-right: 70px;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+        text-align: left;
+    }
 }
 
 .address {
     display: block;
     margin-top: 20px;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     color: var(--another-text-color);
 
@@ -26,11 +37,15 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .more-contacts__link {
     display: block;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     color: rgba(255, 255, 255, 0.6);
 
@@ -44,15 +59,26 @@
     &:focus {
         color: var(--akcent-color);
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .join {
-    margin-right: 93px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 }
 
 .join__title {
     margin-bottom: 20px;
-
+    
+    text-align: center;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -94,9 +120,24 @@
     fill: #ffffff;
 }
 
+.contacts-join {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex; 
+        align-items: baseline;
+    }
+}
+
 .newsletter__invite {
     margin-bottom: 20px;
 
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -107,14 +148,19 @@
 }
 
 .newsletter-box {
-    display: flex;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-direction: column;
+    }
 }
 
 .newsletter-input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 16px 15px;
-    margin-right: 12px;
 
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -129,5 +175,16 @@
         letter-spacing: 0.03em;
 
         color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
     }
 }

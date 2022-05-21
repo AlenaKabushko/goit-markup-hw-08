@@ -1,4 +1,8 @@
 .work {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+    
     padding-bottom: 94px;
 }
 
@@ -18,8 +22,7 @@
     justify-content: center;
 }
 
-.work-list__item:not(:last-child),
-.team-list__item:not(:last-child) {
+.work-list__item:not(:last-child) {
     margin-right: 30px;
 }
 
