@@ -57,6 +57,10 @@
     }
 }
 
+.examples__img {
+    width: 100%;
+}
+
 .examples-box {
     position: relative;
     overflow: hidden;
@@ -68,8 +72,8 @@
 
     display: flex;
     align-items: center;
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     padding: 63px 24px;
 
     font-size: 18px;
@@ -86,6 +90,10 @@
     .examples__item:hover &,
     .examples__item:focus & {
         transform: translateY(-100%);
+    }
+
+    @media screen and (max-width: 359px) {
+        font-size: calc(15px + (3 + 3 * 0.7) * ((100vw - 320px) / 450));
     }
 }
 

@@ -148,6 +148,11 @@
 }
 
 .newsletter-box {
+@media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+
     @media screen and (min-width: 768px) {
         display: flex;
     }
@@ -158,7 +163,8 @@
 }
 
 .newsletter-input {
-    width: 450px;
+    display: block;
+    width: 100%;
     height: 50px;
     padding: 16px 15px;
 
@@ -175,6 +181,10 @@
         letter-spacing: 0.03em;
 
         color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
     }
 
     @media screen and (max-width: 1199px) {
