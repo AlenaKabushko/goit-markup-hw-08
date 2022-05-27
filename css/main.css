@@ -651,11 +651,16 @@ button {
   margin-right: -30px;
   margin-bottom: -30px;
 }
+@media screen and (max-width: 767px) {
+  .clients-list {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .clients-list__item {
-    width: calc(50% - 30px);
-    margin-right: 30px;
+    width: calc(50% - 15px);
   }
 }
 
