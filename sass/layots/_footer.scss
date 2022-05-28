@@ -85,6 +85,10 @@
     text-transform: uppercase;
 
     color: var(--another-text-color);
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .join-soc {
@@ -145,6 +149,10 @@
     text-transform: uppercase;
 
     color: var(--another-text-color);
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .newsletter-box {

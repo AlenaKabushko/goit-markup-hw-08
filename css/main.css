@@ -221,6 +221,7 @@ button {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
+    margin-right: 0px;
   }
 }
 
@@ -305,8 +306,6 @@ button {
 }
 @media screen and (min-width: 769px) {
   .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-img-desktop.jpg");
   }
 }
@@ -318,6 +317,8 @@ button {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -427,13 +428,14 @@ button {
 }
 
 .features-list {
+  width: 100%;
   margin-bottom: -30px;
 }
 @media screen and (min-width: 768px) {
   .features-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    justify-content: space-between;
   }
 }
 
@@ -443,13 +445,12 @@ button {
 }
 @media screen and (min-width: 768px) {
   .features-list__item {
-    width: calc(50% - 30px);
-    margin-right: 30px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features-list__item {
-    width: calc(25% - 30px);
+    width: 270px;
   }
 }
 
@@ -550,7 +551,7 @@ button {
   .team-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    justify-content: space-between;
   }
 }
 
@@ -562,13 +563,12 @@ button {
 }
 @media screen and (min-width: 768px) {
   .team-list__item {
-    width: calc(50% - 30px);
-    margin-right: 30px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team-list__item {
-    width: calc(25% - 30px);
+    width: 270px;
   }
 }
 
@@ -648,16 +648,18 @@ button {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
+  justify-content: space-between;
   margin-bottom: -30px;
 }
 @media screen and (max-width: 767px) {
   .clients-list {
     max-width: 100%;
-    justify-content: space-between;
   }
 }
 
+.clients-list__item {
+  margin-bottom: 30px;
+}
 @media screen and (max-width: 767px) {
   .clients-list__item {
     width: calc(50% - 15px);
@@ -670,8 +672,6 @@ button {
   align-items: center;
   width: 100%;
   height: 92px;
-  margin-right: 30px;
-  margin-bottom: 30px;
   border: 1px solid var(--icon-fill);
   border-radius: 4px;
   cursor: pointer;
@@ -781,6 +781,11 @@ button {
   text-transform: uppercase;
   color: var(--another-text-color);
 }
+@media screen and (min-width: 1200px) {
+  .join__title {
+    text-align: left;
+  }
+}
 
 .join-soc {
   display: flex;
@@ -834,6 +839,11 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--another-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .newsletter__invite {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 767px) {

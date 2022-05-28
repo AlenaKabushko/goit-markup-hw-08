@@ -17,8 +17,7 @@
     @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-
-    margin-right: -30px;
+    justify-content: space-between;
     }
 }
 
@@ -33,12 +32,11 @@
     border-radius: 0px 0px 4px 4px;
 
     @media screen and (min-width: 768px) {
-        width: calc(100% / 2 - 30px);
-        margin-right: 30px;
-    }
+        width: 354px;        
+    }   
 
     @media screen and (min-width: 1200px) {
-        width: calc(100% / 4 - 30px);
+        width: 270px;
     }
 }
 
