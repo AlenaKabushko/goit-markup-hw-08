@@ -1132,7 +1132,7 @@ button {
   .examples {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    justify-content: space-between;
   }
 }
 
@@ -1148,7 +1148,6 @@ button {
 @media screen and (min-width: 768px) {
   .examples__item {
     width: calc(50% - 30px);
-    margin-right: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
