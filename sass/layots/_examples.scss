@@ -48,11 +48,13 @@
     }
 
     @media screen and (min-width: 768px) {
-        width: calc(100% / 2 - 30px);
+        width: 354px;
+        display: flex;
+        flex-direction: column;
     }
 
     @media screen and (min-width: 1200px) {
-        width: calc(100% / 3 - 30px);
+        width: 370px;
     }
 }
 
@@ -117,4 +119,5 @@
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
+    flex-grow: 1;
 }

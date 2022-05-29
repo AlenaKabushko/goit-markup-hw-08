@@ -1147,12 +1147,14 @@ button {
 }
 @media screen and (min-width: 768px) {
   .examples__item {
-    width: calc(50% - 30px);
+    width: 354px;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 1200px) {
   .examples__item {
-    width: calc(33.3333333333% - 30px);
+    width: 370px;
   }
 }
 
@@ -1210,6 +1212,7 @@ button {
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
+  flex-grow: 1;
 }
 
 @media screen and (max-width: 767px) {
